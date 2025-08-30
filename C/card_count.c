@@ -7,11 +7,11 @@ card count complete
 #include <stdio.h>
 #include <stdlib.h>
 
-int main () {
+int main () 
+{
 
         char card_name[3];
         int count = 0;
-
         while (card_name[0] != 'X'){
                 puts("Enter the card_name: ");
                 scanf ("%2s", card_name);
@@ -34,6 +34,7 @@ int main () {
                                 puts("i dont undestand that value!");
                                 continue;
                         }
+                }
                         if ((val > 2 ) && (val < 7)){
 
                                 count++;
@@ -44,5 +45,4 @@ int main () {
                         printf("Current count: %i\n", count);
                 }
                 return 0;
-                }
-}
+        }
